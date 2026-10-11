@@ -123,3 +123,25 @@ user@kalii:~\$ mkdir -p empty_dir/src
 user@kalii:~\$ rmdir -p empty_dir/src
 ```
 
+-----
+## 5.Нужно найти и сделать так, чтобы при вводе префикса sudo не запрашивался пароль. Вывести в терминал содержимое файла, в котором осуществлялись правки и приложить листинг в репозиторий. 
+
+
+### Configuration File Path
+`/etc/sudoers.d/90-nopasswd-user`
+
+### File Content Listing
+```bash
+user@kalii:~\$ sudo cat /etc/sudoers.d/90-nopasswd-user
+user ALL=(ALL) NOPASSWD:ALL
+```
+
+### Verification
+
+```bash
+user@kalii:~\$ sudo apt update
+Hit:1 http://http.kali.org/kali kali-rolling InRelease
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+
+```

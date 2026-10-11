@@ -122,5 +122,4 @@ user@kalii:~\$ rm -rf project/
 user@kalii:~\$ mkdir -p empty_dir/src
 user@kalii:~\$ rmdir -p empty_dir/src
 ```
-user@kalii:~\$ rmdir -p empty_dir/src
-```
+
